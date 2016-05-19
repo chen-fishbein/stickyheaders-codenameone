@@ -30,5 +30,5 @@ The StickyHeader assumes it is in a scrollable y Conatiner parent.
 
 Check out this video:
 
-[![StickHeader](StickyHeader/simulator.png)](StickyHeader/StickHeaders.swf "Sticky Headers")
+[![StickHeader](StickyHeader/simulator.png)](http://youtu.be/Hb-Fz-6PG54?hd=1 "Sticky Headers")
 
