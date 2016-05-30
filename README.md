@@ -3,8 +3,10 @@ Sticky Headers for CodenameOne apps
 
 ##Usage
 Copy the [com.codename1.ui.StickyHeader class](StickyHeader/src/com/codename1/ui/StickyHeader.java) into your project and use it
-as a regular Container.(make sure the class stays in the com.codename1.ui package )
+as a regular Container.
 The StickyHeader assumes it is in a scrollable y Conatiner parent.
+
+#####Important - make sure the class stays in the com.codename1.ui package 
 
 ```java
         Form hi = new Form("Sticky Header");
