@@ -114,8 +114,8 @@ public class StickyHeader extends Container implements ScrollListener {
                 int cw = g.getClipWidth();
                 int ch = g.getClipHeight();
 
-                int tx = getParent().getX() - getX();
-                int ty = getParent().getY() - getY();
+                int tx = getComponentForm().getContentPane().getX() - getX();
+                int ty = getComponentForm().getContentPane().getY() - getY();
                 g.setClip(0, 0, rect.getWidth(), rect.getHeight());
 
                 g.translate(tx, ty);
