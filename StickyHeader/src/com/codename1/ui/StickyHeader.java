@@ -25,6 +25,22 @@ public class StickyHeader extends Container implements ScrollListener {
     public StickyHeader() {
     }
 
+    public StickyHeader() {
+    }
+
+    public StickyHeader(Layout layout) {
+        this.setLayout(layout);
+    }
+
+    public StickyHeader(Layout layout, String uiid) {
+        this.setLayout(layout);
+        this.setUIID(uiid);
+    }
+
+    public StickyHeader(String uiid) {
+        this.setUIID(uiid);
+    }
+
     @Override
     protected void initComponent() {
         super.initComponent();
