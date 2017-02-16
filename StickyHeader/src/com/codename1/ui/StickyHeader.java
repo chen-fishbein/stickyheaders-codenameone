@@ -25,6 +25,22 @@ public class StickyHeader extends Container implements ScrollListener {
     public StickyHeader() {
     }
 
+    public StickyHeader() {
+    }
+
+    public StickyHeader(Layout layout) {
+        this.setLayout(layout);
+    }
+
+    public StickyHeader(Layout layout, String uiid) {
+        this.setLayout(layout);
+        this.setUIID(uiid);
+    }
+
+    public StickyHeader(String uiid) {
+        this.setUIID(uiid);
+    }
+
     @Override
     protected void initComponent() {
         super.initComponent();
@@ -114,8 +130,8 @@ public class StickyHeader extends Container implements ScrollListener {
                 int cw = g.getClipWidth();
                 int ch = g.getClipHeight();
 
-                int tx = getParent().getX() - getX();
-                int ty = getParent().getY() - getY();
+                int tx = getComponentForm().getContentPane().getX() - getX();
+                int ty = getComponentForm().getContentPane().getY() - getY();
                 g.setClip(0, 0, rect.getWidth(), rect.getHeight());
 
                 g.translate(tx, ty);
